@@ -1,0 +1,8 @@
+.idea/
+exportToHTML/
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
