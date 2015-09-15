@@ -16,12 +16,20 @@ public class Josephus {
    */
   public static void main(String[] args) {
     // 41 Personen anlegen
-    Person erste = new Person("Frank");
-    Person zweite = new Person("Marek");
-    erste.einfügen(zweite);
-    System.out.println("erste :" + erste.getName());
-    System.out.println("zweite :" + erste.getNächste().getName());
-    System.out.println("dritte :" + erste.getNächste().getNächste().getName());
+    Person erste = new Person("1");
+    for (Integer i = 41; i>1; i--) {
+      erste.einfügen(new Person(i.toString()));
+    }
+    // Ausgabe nach erstellen aller Personen in der Gruppe
+    System.out.println("alle:\n" + erste.getGroup());
+    // töten solange noch mehr als einer in der Gruppe enthalten sind
+    while (erste.getNächste() != erste) {
+      // zwei weiter und töte den Dritten
+      erste = erste.getNächste().getNächste();
+      erste.töte();
+      System.out.println(erste.getGroup());
+    }
+    System.out.println("letzter: " + erste.getGroup());
   }
   
 }
