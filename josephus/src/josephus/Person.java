@@ -1,7 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Bauplan für Personen die in einem Kreis stehen
  */
 package josephus;
 
@@ -22,11 +20,42 @@ public class Person {
   public Person getNächste() {
     return nächste;
   }
+  /**
+   * stellt einen Text mit den Bezeichnungen der Personen im Kreis zusammen
+   * @return Liste aller Namen im Kreis
+   */
+  public String getGroup() {
+    Person p = nächste;
+    String erg = getName();
+    while (p != this) {
+      erg += " " + p;
+      p = p.nächste;
+    }
+    return erg;
+  }
+  /**
+   * 
+   * @return Anzahl der Elemente im Kreis
+   */
+   public Integer getLänge() {
+    Person p = nächste;
+    Integer anz = 1;
+    while (p != this) {
+      anz++;
+      p = p.nächste;
+    }
+    return anz;
+  }
   public void einfügen(Person p) {
     p.nächste = nächste;
     nächste = p;
   }
   public void töte() {
-    // TODO
+    nächste = nächste.nächste;
+  }
+  
+  @Override
+  public String toString() {
+    return getName();
   }
 }
