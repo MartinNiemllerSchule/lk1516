@@ -6,3 +6,7 @@ exportToHTML/
 *.jar
 *.war
 *.ear
+/keine7/nbproject/private/
+/keine7/build/
+/josephus/nbproject/private/
+/josephus/build/
