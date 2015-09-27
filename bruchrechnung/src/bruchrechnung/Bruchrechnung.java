@@ -1,7 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Testet die Klasse Bruch
  */
 package bruchrechnung;
 
@@ -18,8 +16,10 @@ public class Bruchrechnung {
     // Zahlen festlegen
     Bruch zahl1 = new Bruch(15,45);
     Bruch zahl2 = new Bruch(154,21);
+    // Ausgabe und Kürzen testen
     System.out.println("Zahl1: " + zahl1);
     System.out.println("Zahl2: " + zahl2);
+    // Addieren und Subtrahieren testen
     System.out.println("Summe: " + zahl1.addiere(zahl2));
     System.out.println("Differenz: " + zahl1.subtrahiere(zahl2));
   }
