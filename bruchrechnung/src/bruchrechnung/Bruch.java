@@ -35,7 +35,11 @@ public class Bruch {
       zähler *= -1;
     } else {
       // Fehlerausgabe falls nenner 0 ist
+<<<<<<< HEAD
       throw new ArithmeticException("Der Nenner eines Bruchs darf nicht Null werden");
+=======
+      throw ArithmeticException("Der Nenner eines Bruchs darf nicht Null werden");
+>>>>>>> 4360d6558765808dbc262b3d1b49a7970ec68a6f
     }
     
     kürze();
@@ -47,8 +51,13 @@ public class Bruch {
   private void kürze() {
     Integer ggt = ggT();
     if (ggt != 1) {
+<<<<<<< HEAD
     zähler /= ggt;
     nenner /= ggt;
+=======
+      zähler /= ggt;
+      nenner /= ggt;
+>>>>>>> 4360d6558765808dbc262b3d1b49a7970ec68a6f
     } // else // ist schon gekürzt
   }
   /**
@@ -99,7 +108,11 @@ public class Bruch {
    *   - Null
    *   - Vorzeichenbehaftete Brüche
    *   - ganze Zahlen mit und ohne Vorzeichen
+<<<<<<< HEAD
    * @return ganze Zahl für die Konsolenausgabe formatiert
+=======
+   * @return
+>>>>>>> 4360d6558765808dbc262b3d1b49a7970ec68a6f
    */
   @Override
   public String toString() {
