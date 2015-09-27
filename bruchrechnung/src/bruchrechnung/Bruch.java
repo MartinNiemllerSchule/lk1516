@@ -1,7 +1,10 @@
 /**
  * Stellt die Grundfunktionalitäten zur Bruchrechnung bereit
+ * ist nicht vollständig fertiggestellt, sondern soll das grundsätzliche Vorgehen zeigen
  */
 package bruchrechnung;
+
+import java.lang.ArithmeticException;
 
 /**
  *
@@ -16,6 +19,13 @@ public class Bruch {
   private Integer getRest() {
     return zähler % nenner;
   }
+
+  /**
+   * Konstruktor
+   * wirft einen Fehler, falls der Nenner Null ist
+   * @param z - Zähler
+   * @param n - Nenner
+   */
   public Bruch (Integer z, Integer n) {
     zähler = z;
     if (n > 0) {
@@ -24,15 +34,22 @@ public class Bruch {
       nenner = -n;
       zähler *= -1;
     } else {
-      // TODO: Fehlerausgabe falls nenner 0 ist
+      // Fehlerausgabe falls nenner 0 ist
+      throw new ArithmeticException("Der Nenner eines Bruchs darf nicht Null werden");
     }
     
     kürze();
   }
+
+  /**
+   * kürzt den Bruch, falls das geht
+   */
   private void kürze() {
     Integer ggt = ggT();
+    if (ggt != 1) {
     zähler /= ggt;
     nenner /= ggt;
+    } // else // ist schon gekürzt
   }
   /**
    * wird für das Kürzen von Brüchen benötigt
@@ -51,18 +68,39 @@ public class Bruch {
    }
    return z;
   }
+
+  /**
+   * addiert Bruch b zu diesem Bruch, ohne einen von beiden zu ändern
+   * @param b - ein Summand
+   * @return - neu angelegter Bruch
+   */
   public Bruch addiere(Bruch b) {
     return new Bruch(
       zähler*b.nenner+nenner*b.zähler,
       nenner*b.nenner
     );
   }
+
+  /**
+   * subtrahiert von diesem (Minuend) den Bruch b (Subtrahent), Differenz ist ein neuer Bruch
+   * @param b - Subtrahend
+   * @return - Differenz als neuer Bruch
+   */
   public Bruch subtrahiere(Bruch b) {
     return new Bruch(
       zähler*b.nenner-nenner*b.zähler,
       nenner*b.nenner
     );
   }
+
+  /**
+   * Ausgabe als gemeiner Bruch auf der Konsole
+   *  Besonderheiten:
+   *   - Null
+   *   - Vorzeichenbehaftete Brüche
+   *   - ganze Zahlen mit und ohne Vorzeichen
+   * @return ganze Zahl für die Konsolenausgabe formatiert
+   */
   @Override
   public String toString() {
     String s = "";
