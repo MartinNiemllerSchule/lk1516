@@ -6,7 +6,13 @@ import java.awt.*;
 /**
  * Die Klasse Kurve erstellt einen Text der als Turtle-Grafik interpretiert die Kochkurve enthält
  * und in einem Fenster darstellt
+ *
+ * maxLevel - Anzahl der Iterationen (Maximal 10 - mehr ist nicht sinnvoll,
+ *            denn 3^9 sind schon ca. 20.000 - so viele Pixel hat kein Bildschirm)
+ * gesamtLänge - passt die Kurve dem Fenster an (TODO: könnte aus den Fenstermaßen bestimmt werden)
+ * kurven - speichert alle Generationen der Kochkurve von 0 = F bis maxLevel = ... ab
  */
+
 public class Kurve extends JFrame {
 	private int maxLevel;
 	private int gesamtLänge;
@@ -15,7 +21,7 @@ public class Kurve extends JFrame {
 	private String[] kurven = new String[10];
 
 	/**
-	 * Creates new form Kurve
+	 * Konstruktoren
 	 */
 	public Kurve() {
 		maxLevel = 1;
@@ -29,6 +35,9 @@ public class Kurve extends JFrame {
 		erstelleKurven();
 	}
 
+	/**
+	 * Füllt Array kurven bis zu maxLevel
+	 */
 	private void erstelleKurven() {
 		kurven[0] = initiator;
 		for (int i = 1; i <= maxLevel; i++) {
@@ -36,10 +45,23 @@ public class Kurve extends JFrame {
 		}
 	}
 
+	/**
+	 *
+	 * @return Text für die Kochkurve mit den meisten Details
+	 */
 	public String KochkurveAlsText() {
 		return kurven[maxLevel];
 	}
 
+	public String KochkurveAlsText(int level) {
+		level = Math.min(level, maxLevel);
+		return kurven[level];
+	}
+
+	/**
+	 * Ergänzt die paint-Methode - zeichnet die Kurve entsprechend den Vorgaben aus KochkurveAlsText()
+	 * @param g - zeichnet direkt in den Frame
+	 */
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);

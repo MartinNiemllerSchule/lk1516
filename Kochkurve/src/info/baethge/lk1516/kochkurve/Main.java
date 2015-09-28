@@ -4,6 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main {
+	/**
+	 * Hauptprogramm, erstellt das Fenster, in das dann gezeichnet wird
+	 *
+	 * @param args - Kommandozeilenargumente sollte es nicht geben
+	 */
 	public static void main(String[] args) {
 		JFrame frame = new Kurve(5);
 		frame.setTitle("Kochkurve");
@@ -12,9 +17,7 @@ public class Main {
 		frame.setPreferredSize(new Dimension(820, 300));
 		frame.setLocation(new Point(50, 50));
 		frame.setResizable(false);
-
 		frame.pack();
 		frame.setVisible(true);
 	}
-
 }
