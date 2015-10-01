@@ -22,8 +22,11 @@ public class Kreis extends Figur {
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
-		g2.setPaint(füllung);
 		g2.setStroke(rand);
+		g2.setColor(randFarbe);
+		g2.draw(new Ellipse2D.Double(position.getX() - radius - 1, position.getY() - radius - 1, radius * 2, radius * 2));
+		g2.setPaint(füllung);
 		g2.fill(new Ellipse2D.Double(position.getX() - radius, position.getY() - radius, radius * 2, radius * 2));
+
 	}
 }
