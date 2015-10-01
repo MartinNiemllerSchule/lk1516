@@ -4,29 +4,22 @@
  */
 package bruchrechnung;
 
-import java.lang.ArithmeticException;
-
 /**
  *
  * @author frank.baethge
  */
 public class Bruch {
-  private Integer zähler;
-  private Integer nenner;
-  private Integer getGanze() {
-    return zähler / nenner;
-  }
-  private Integer getRest() {
-    return zähler % nenner;
-  }
+  private Long zähler;
+  private Long nenner;
 
   /**
    * Konstruktor
    * wirft einen Fehler, falls der Nenner Null ist
+   *
    * @param z - Zähler
    * @param n - Nenner
    */
-  public Bruch (Integer z, Integer n) {
+  public Bruch(Long z, Long n) {
     zähler = z;
     if (n > 0) {
       nenner = n;
@@ -37,15 +30,27 @@ public class Bruch {
       // Fehlerausgabe falls nenner 0 ist
       throw new ArithmeticException("Der Nenner eines Bruchs darf nicht Null werden");
     }
-    
+
     kürze();
+  }
+
+  private Long getGanze() {
+    return zähler / nenner;
+  }
+
+  private Long getRest() {
+    return zähler % nenner;
+  }
+
+  public double getDezimal() {
+    return (double) zähler / nenner;
   }
 
   /**
    * kürzt den Bruch, falls das geht
    */
   private void kürze() {
-    Integer ggt = ggT();
+    Long ggt = ggT();
     if (ggt != 1) {
     zähler /= ggt;
     nenner /= ggt;
@@ -56,19 +61,20 @@ public class Bruch {
    * nach dem Euklidischen Algorithmus
    * @return größter gemeinsamer Teiler von Zähler und Nenner
    */
-  public Integer ggT() {
-    Integer z = Math.abs(zähler);
-    Integer n = nenner;
+  public Long ggT() {
+    Long z = Math.abs(zähler);
+    Long n = nenner;
     while (n != 0) {
      if (z > n) {
        z = z - n;
      } else {
        n = n - z;
      }
-   }
-   return z;
+    }
+    return z;
   }
 
+  /* TODO: Überlauf im Zahlenbereich bemerken */
   /**
    * addiert Bruch b zu diesem Bruch, ohne einen von beiden zu ändern
    * @param b - ein Summand
@@ -104,8 +110,8 @@ public class Bruch {
   @Override
   public String toString() {
     String s = "";
-    Integer gG = getGanze();
-    Integer gR = getRest();
+    Long gG = getGanze();
+    Long gR = getRest();
     if (gG != 0) {
       s += gG.toString() + " ";
     }
