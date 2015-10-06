@@ -6,21 +6,37 @@ import java.awt.*;
  * Enthält alle grundlegenden Eigenschaften und Methoden der Zeichen-Objekte
  */
 abstract class Figur {
+	private Point position;
+
 	protected BasicStroke rand;
-	protected BasicStroke randFett;
-	protected Color füllung;
-	protected Color randFarbe;
+	protected Color füllung, randFarbe;
 	protected String meldung;
-	protected Point position;
 	protected Graphics2D g2;
 
-	public Figur() {
+	/**
+	 * Konstruktor - übergeben wird die Position der Figur
+	 * beim Kreis ist das das Zentrum
+	 * beim Dreieck ist das der erste zu zeichnende Punkt
+	 *
+	 * @param x - x-Koordinate der Position
+	 * @param y - y-Koordinate der Position
+	 */
+	public Figur(Integer x, Integer y) {
 		rand = new BasicStroke(2.0f);
-		randFett = new BasicStroke(6.0f);
 		randFarbe = Color.BLUE;
 		füllung = Color.DARK_GRAY;
 		meldung = "Figur";
-		position = null;
+		position = new Point(x,y);
+	}
+
+	public abstract Double berechneFläche();
+	public abstract Double berechneUmfang();
+
+	protected Integer getX() {
+		return position.x;
+	}
+	protected Integer getY() {
+		return position.y;
 	}
 
 	public void paint(Graphics g) {

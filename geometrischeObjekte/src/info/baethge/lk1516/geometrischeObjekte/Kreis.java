@@ -2,7 +2,7 @@ package info.baethge.lk1516.geometrischeObjekte;
 
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
-import java.awt.geom.Rectangle2D;
+import static java.lang.Math.PI;
 
 /**
  * Klasse repräsentiert einen Kreis und stellt dessen Funktionalität dar
@@ -10,13 +10,22 @@ import java.awt.geom.Rectangle2D;
 public class Kreis extends Figur {
 	private Integer radius;
 
-	public Kreis(Integer radius, Point position) throws IllegalArgumentException {
+	public Kreis(Integer x, Integer y, Integer radius) throws IllegalArgumentException {
+		super(x,y);
 		meldung = "Kreis";
 		this.radius = Math.abs(radius);
 		if (0 == radius) throw new IllegalArgumentException("Der Radius eines Kreises kann nicht Null sein.");
-		this.position = position;
-
 		füllung = Color.gray;
+	}
+
+	@Override
+	public Double berechneFläche() {
+		return PI*radius*radius;
+	}
+
+	@Override
+	public Double berechneUmfang() {
+		return 2*PI*radius;
 	}
 
 	@Override
@@ -24,9 +33,10 @@ public class Kreis extends Figur {
 		super.paint(g);
 		g2.setStroke(rand);
 		g2.setColor(randFarbe);
-		g2.draw(new Ellipse2D.Double(position.getX() - radius - 1, position.getY() - radius - 1, radius * 2, radius * 2));
+		Ellipse2D e = new Ellipse2D.Double(getX() - radius, getY() - radius, radius * 2, radius * 2);
+		g2.draw(e);
 		g2.setPaint(füllung);
-		g2.fill(new Ellipse2D.Double(position.getX() - radius, position.getY() - radius, radius * 2, radius * 2));
+		g2.fill(e);
 
 	}
 }
