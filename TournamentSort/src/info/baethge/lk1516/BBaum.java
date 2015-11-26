@@ -19,17 +19,27 @@ public class BBaum {
 		wurzel = fülleBaumMitNull(baumTiefe);
 		speichereEin(wurzel, adressen);
 	}
+
+	/**
+	 * füllt zunächst den Baum auf, um anschließend das oberste Element zu entfernen und diese Stelle neu zu füllen
+	 *
+	 * @return - ArrayListe in absteigend sortierter Reihenfolge
+	 */
 	public ArrayList<Adresse> tournamentSort() {
 		spieleRundenAus(wurzel);
-		System.out.println(this);
-
-		return null; // TODO
+		ArrayList<Adresse> sortiert = new ArrayList<>();
+		while (!wurzel.istLeer()) {
+			sortiert.add(wurzel.a);
+			wurzel.a = null;
+			fülleAuf(wurzel);
+		}
+		return sortiert;
 	}
 
 	/**
 	 * in der ersten Phase werden alle Runden beginnend bei der untersten Ebene ausgespielt.
 	 * Gewinner veranlassen, dass das zurückbleibende leere Feld von unten aufgefüllt wird
-	 * @param k
+	 * @param k - Knoten, von dem ausgehend die Runden ausgespielt werden sollen (rekursiver Abstieg)
 	 */
 	private void spieleRundenAus(Knoten k) {
 		if (!k.istBlatt() && k.links.istLeer() && k.rechts.istLeer()) {
@@ -41,7 +51,7 @@ public class BBaum {
 
 	/**
 	 * ist ein oberes Feld leer geworden, wird es, wenn möglich, mit weiter unten stehenden Elementen gefüllt
-	 * @param k
+	 * @param k - Knoten, von dem ausgehend die oberen Ebenen aufgefüllt werden (rekursiver Abstieg)
 	 */
 	private void fülleAuf(Knoten k){
 		if (!k.istBlatt()) {
@@ -82,8 +92,8 @@ public class BBaum {
 	/**
 	 * die in der ArrayListe a übergebenen Werte werden in der untersten Ebene ergänzt
 	 * dadurch eintsteht eine Ebene mit Blättern, die zunächst die Nutzerdaten enthalten
-	 * @param k
-	 * @param a
+	 * @param k - rekursiver Abstieg - in den Blätter werden die Einträge gespeichert
+	 * @param a - TODO: vielleicht ist es besser die unsortierten Knoten global zu definieren (und nicht jedesmal zu übergeben)
 	 */
 	private void speichereEin(Knoten k, ArrayList<Adresse> a) {
 		if (position<a.size()) {
@@ -102,8 +112,8 @@ public class BBaum {
 	/**
 	 * Erzeugt einen binären Baum mit lauter leeren Knoten in ebene Ebenen
 	 * anschließend kann der Baum 2^ebene Blätter aufnehmen
-	 * @param ebene
-	 * @return
+	 * @param ebene - Ebenenzähler
+	 * @return - Wurzelknoten
 	 */
 	private Knoten fülleBaumMitNull(int ebene) {
 		if (ebene == 0) {

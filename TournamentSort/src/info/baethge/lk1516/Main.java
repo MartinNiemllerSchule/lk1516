@@ -20,28 +20,31 @@ public class Main {
 		if (einlesen("./data/adressdaten.csv",11)) {
 			baum = new BBaum(adressen);
 			System.out.println(baum + "\n\n");
-			baum.tournamentSort();
+			ArrayList<Adresse> sortiert = baum.tournamentSort();
+			for (Adresse a : sortiert) {
+				System.out.println(a);
+			}
 		}
 	}
 
 	/**
 	 * Liest die Adress-Daten aus der Datei ein und speichert sie in adressen ab
-	 * @param dateiName
+	 * @param dateiName - Dateiname
 	 */
 	public void einlesen(String dateiName) {
 		einlesen(dateiName,Integer.MAX_VALUE);
 	}
 	/**
 	 * Liest die ersten anzahl Adress-Daten aus der Datei ein und speichert sie in adressen ab
-	 * @param dateiName
+	 * @param dateiName - Dateiname
 	 * @param anzahl - Liste nur anzahl-Zeilen ein
 	 */
 	public boolean einlesen(String dateiName, Integer anzahl) {
-		BufferedReader br = null;
+		BufferedReader br;
 		try {
 			FileReader fr = new FileReader(dateiName);
 			br = new BufferedReader(fr);
-			String zeile = "";
+			String zeile;
 			while (((zeile = br.readLine()) != null) && (anzahl-- > 0)) adressen.add(new Adresse(zeile.split(",")));
 			return true;
 		} catch (FileNotFoundException e) {
