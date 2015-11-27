@@ -12,7 +12,7 @@ public class Adresse implements Comparable<Adresse> {
 	protected String s;
 	protected String p;
 	protected String o;
-	protected Adresse nächste; // alphabetische Sortierung
+	protected int grauWert;
 
 	public Adresse(String nachName, String vorName, String strasse, String postleitzahl, String ort) {
 		n = nachName;
@@ -20,7 +20,6 @@ public class Adresse implements Comparable<Adresse> {
 		s = strasse;
 		p = postleitzahl;
 		o = ort;
-		nächste = null;
 	}
 	public Adresse(String[] adresse) {
 		this(adresse[0], adresse[1], adresse[2], adresse[3], adresse[4]);

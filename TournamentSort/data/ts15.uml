@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>info.baethge.lk1516</OriginalElement>
+  <nodes>
+    <node x="-353.7553002113193" y="44.858875413450946">info.baethge.lk1516.Knoten</node>
+    <node x="-790.2425578831313" y="14.30760749724373">info.baethge.lk1516.BBaum</node>
+    <node x="2.94916850422635" y="36.27342888643881">info.baethge.lk1516.Adresse</node>
+    <node x="-351.6883211595001" y="379.69459757442115">info.baethge.lk1516.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="info.baethge.lk1516.BBaum" target="info.baethge.lk1516.Knoten">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="info.baethge.lk1516.Main" target="info.baethge.lk1516.Adresse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="info.baethge.lk1516.Main" target="info.baethge.lk1516.BBaum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="info.baethge.lk1516.Knoten" target="info.baethge.lk1516.Adresse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="-252.5" y="327.5" />
+  <SelectedNodes>
+    <node>info.baethge.lk1516.Knoten</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

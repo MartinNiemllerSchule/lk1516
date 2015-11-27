@@ -9,13 +9,15 @@ import java.util.ArrayList;
 public class BBaum {
 	private Knoten wurzel;
 	private int position;
+	private int anzahlElemente;
 
 	/**
 	 * alle Adressen kommen in die Blätter (unterste Ebene)
 	 * @param adressen - Liste der zu sortierenden Adressen
 	 */
 	public BBaum(ArrayList<Adresse> adressen) {
-		int baumTiefe = 31 - Integer.numberOfLeadingZeros(adressen.size()); //http://stackoverflow.com/questions/3305059/how-do-you-calculate-log-base-2-in-java-for-integers
+		anzahlElemente = adressen.size();
+		int baumTiefe = 31 - Integer.numberOfLeadingZeros(anzahlElemente); //http://stackoverflow.com/questions/3305059/how-do-you-calculate-log-base-2-in-java-for-integers
 		wurzel = fülleBaumMitNull(baumTiefe);
 		speichereEin(wurzel, adressen);
 	}
@@ -27,13 +29,56 @@ public class BBaum {
 	 */
 	public ArrayList<Adresse> tournamentSort() {
 		spieleRundenAus(wurzel);
-		ArrayList<Adresse> sortiert = new ArrayList<>();
+		ArrayList<Adresse> sortiert = new ArrayList<>(anzahlElemente);
 		while (!wurzel.istLeer()) {
 			sortiert.add(wurzel.a);
 			wurzel.a = null;
 			fülleAuf(wurzel);
 		}
 		return sortiert;
+	}
+
+	/**
+	 * bereitet die Ausgabe für Processing auf
+	 * - dabei wird jeder Schritt (ab der ersten bis zu letzten Entnahme dokumentiert)
+	 * - es werden nur die Farben abgespeichert
+	 * @return - Liste der Schritte (von 1 bis wurzel leer ist),
+	 *  jeder Schritt ist dabei eine ArrayList des zunächst (unsortieren Bereichs) Baums und anschließend
+	 *  des sortierten Bereichs (in absteigender Folge)
+	 */
+	public ArrayList<ArrayList<Integer>> tournamentSortByStep() {
+		ArrayList<ArrayList<Integer>> ergebnis = new ArrayList<>(anzahlElemente);
+		ArrayList<Adresse> sortiert = new ArrayList<>(anzahlElemente);
+		spieleRundenAus(wurzel);
+		while (!wurzel.istLeer()) {
+			sortiert.add(wurzel.a);
+			wurzel.a = null;
+			fülleAuf(wurzel);
+			// dokumentiere diesen Schritt
+			ArrayList<Integer> zeile = new ArrayList<>(anzahlElemente);
+			// ergänze Baum
+			zeile.addAll(liesFarbenAusBaum(wurzel));
+			// ergänze sortierte Elemente
+			for (int i = sortiert.size()-1; i>=0; i--) {
+				zeile.add(sortiert.get(i).grauWert);
+			}
+			ergebnis.add(zeile);
+		}
+		return ergebnis;
+	}
+
+	/**
+	 * geht durch den Baum und sammelt alle noch vorhanenen Farben auf
+	 * @return - geordnete Liste der Farben im Baum
+	 */
+	private ArrayList<Integer> liesFarbenAusBaum(Knoten knoten) {
+		ArrayList<Integer> ergebnis = new ArrayList<>();
+		if (!knoten.istLeer()) {
+			ergebnis.add(knoten.a.grauWert);
+		}
+		if (knoten.links != null) ergebnis.addAll(liesFarbenAusBaum(knoten.links));
+		if (knoten.rechts != null) ergebnis.addAll(liesFarbenAusBaum(knoten.rechts));
+		return ergebnis;
 	}
 
 	/**
