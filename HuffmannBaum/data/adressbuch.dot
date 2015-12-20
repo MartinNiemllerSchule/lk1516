@@ -1,0 +1,319 @@
+digraph g {
+ graph [
+  rankdir = "TB"
+  bgcolor = "white:lightblue"
+  style="filled"
+  gradientangle = 270
+ ];
+ node [shape=box,style=filled,color="lightgray"];
+ "info.baethge.lk1516.huffman.Knoten@7c729a55" [label="1083138"]
+ "info.baethge.lk1516.huffman.Knoten@3bb9a3ff" [label="454437"]
+ "info.baethge.lk1516.huffman.Knoten@5af3afd9" [label="212517"]
+ "info.baethge.lk1516.huffman.Blatt@44ebcd03" [label="e - 103934" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@694abbdc" [label="108583"]
+ "info.baethge.lk1516.huffman.Knoten@2e005c4b" [label="52326"]
+ "info.baethge.lk1516.huffman.Knoten@5ffead27" [label="25470"]
+ "info.baethge.lk1516.huffman.Knoten@4f18837a" [label="12304"]
+ "info.baethge.lk1516.huffman.Blatt@1fa268de" [label="A - 6029" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@4f6ee6e4" [label="6275"]
+ "info.baethge.lk1516.huffman.Knoten@4466af20" [label="3102"]
+ "info.baethge.lk1516.huffman.Blatt@6b927fb" [label="U - 1498" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@3e58a80e" [label="1604"]
+ "info.baethge.lk1516.huffman.Blatt@4fb61f4a" [label="x - 802" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@4fb0f2b9" [label="V - 802" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@3e58a80e" -> "info.baethge.lk1516.huffman.Blatt@4fb61f4a"
+"info.baethge.lk1516.huffman.Knoten@3e58a80e" -> "info.baethge.lk1516.huffman.Blatt@4fb0f2b9"
+"info.baethge.lk1516.huffman.Knoten@4466af20" -> "info.baethge.lk1516.huffman.Blatt@6b927fb"
+"info.baethge.lk1516.huffman.Knoten@4466af20" -> "info.baethge.lk1516.huffman.Knoten@3e58a80e"
+ "info.baethge.lk1516.huffman.Blatt@a514af7" [label="N - 3173" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@4f6ee6e4" -> "info.baethge.lk1516.huffman.Knoten@4466af20"
+"info.baethge.lk1516.huffman.Knoten@4f6ee6e4" -> "info.baethge.lk1516.huffman.Blatt@a514af7"
+"info.baethge.lk1516.huffman.Knoten@4f18837a" -> "info.baethge.lk1516.huffman.Blatt@1fa268de"
+"info.baethge.lk1516.huffman.Knoten@4f18837a" -> "info.baethge.lk1516.huffman.Knoten@4f6ee6e4"
+ "info.baethge.lk1516.huffman.Blatt@359f7cdf" [label="b - 13166" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@5ffead27" -> "info.baethge.lk1516.huffman.Knoten@4f18837a"
+"info.baethge.lk1516.huffman.Knoten@5ffead27" -> "info.baethge.lk1516.huffman.Blatt@359f7cdf"
+ "info.baethge.lk1516.huffman.Knoten@6356695f" [label="26856"]
+ "info.baethge.lk1516.huffman.Knoten@79924b" [label="13295"]
+ "info.baethge.lk1516.huffman.Blatt@4a94ee4" [label="H - 6539" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@4cc451f2" [label="6756"]
+ "info.baethge.lk1516.huffman.Blatt@6379eb" [label="- - 3366" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@294425a7" [label="E - 3390" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@4cc451f2" -> "info.baethge.lk1516.huffman.Blatt@6379eb"
+"info.baethge.lk1516.huffman.Knoten@4cc451f2" -> "info.baethge.lk1516.huffman.Blatt@294425a7"
+"info.baethge.lk1516.huffman.Knoten@79924b" -> "info.baethge.lk1516.huffman.Blatt@4a94ee4"
+"info.baethge.lk1516.huffman.Knoten@79924b" -> "info.baethge.lk1516.huffman.Knoten@4cc451f2"
+ "info.baethge.lk1516.huffman.Blatt@7b9a4292" [label="S - 13561" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@6356695f" -> "info.baethge.lk1516.huffman.Knoten@79924b"
+"info.baethge.lk1516.huffman.Knoten@6356695f" -> "info.baethge.lk1516.huffman.Blatt@7b9a4292"
+"info.baethge.lk1516.huffman.Knoten@2e005c4b" -> "info.baethge.lk1516.huffman.Knoten@5ffead27"
+"info.baethge.lk1516.huffman.Knoten@2e005c4b" -> "info.baethge.lk1516.huffman.Knoten@6356695f"
+ "info.baethge.lk1516.huffman.Knoten@4567f35d" [label="56257"]
+ "info.baethge.lk1516.huffman.Blatt@67d48005" [label="h - 27529" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@9f116cc" [label="28728"]
+ "info.baethge.lk1516.huffman.Knoten@12468a38" [label="14218"]
+ "info.baethge.lk1516.huffman.Knoten@59309333" [label="7077"]
+ "info.baethge.lk1516.huffman.Knoten@7ec7ffd3" [label="3482"]
+ "info.baethge.lk1516.huffman.Knoten@6572421" [label="1719"]
+ "info.baethge.lk1516.huffman.Blatt@2a798d51" [label="ä - 830" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@6d763516" [label="Z - 889" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@6572421" -> "info.baethge.lk1516.huffman.Blatt@2a798d51"
+"info.baethge.lk1516.huffman.Knoten@6572421" -> "info.baethge.lk1516.huffman.Blatt@6d763516"
+ "info.baethge.lk1516.huffman.Blatt@6b81ce95" [label="v - 1763" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@7ec7ffd3" -> "info.baethge.lk1516.huffman.Knoten@6572421"
+"info.baethge.lk1516.huffman.Knoten@7ec7ffd3" -> "info.baethge.lk1516.huffman.Blatt@6b81ce95"
+ "info.baethge.lk1516.huffman.Knoten@5b239d7d" [label="3595"]
+ "info.baethge.lk1516.huffman.Blatt@52bf72b5" [label="O - 1771" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@37afeb11" [label="y - 1824" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@5b239d7d" -> "info.baethge.lk1516.huffman.Blatt@52bf72b5"
+"info.baethge.lk1516.huffman.Knoten@5b239d7d" -> "info.baethge.lk1516.huffman.Blatt@37afeb11"
+"info.baethge.lk1516.huffman.Knoten@59309333" -> "info.baethge.lk1516.huffman.Knoten@7ec7ffd3"
+"info.baethge.lk1516.huffman.Knoten@59309333" -> "info.baethge.lk1516.huffman.Knoten@5b239d7d"
+ "info.baethge.lk1516.huffman.Blatt@5876a9af" [label="K - 7141" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@12468a38" -> "info.baethge.lk1516.huffman.Knoten@59309333"
+"info.baethge.lk1516.huffman.Knoten@12468a38" -> "info.baethge.lk1516.huffman.Blatt@5876a9af"
+ "info.baethge.lk1516.huffman.Blatt@1aa7ecca" [label="8 - 14510" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@9f116cc" -> "info.baethge.lk1516.huffman.Knoten@12468a38"
+"info.baethge.lk1516.huffman.Knoten@9f116cc" -> "info.baethge.lk1516.huffman.Blatt@1aa7ecca"
+"info.baethge.lk1516.huffman.Knoten@4567f35d" -> "info.baethge.lk1516.huffman.Blatt@67d48005"
+"info.baethge.lk1516.huffman.Knoten@4567f35d" -> "info.baethge.lk1516.huffman.Knoten@9f116cc"
+"info.baethge.lk1516.huffman.Knoten@694abbdc" -> "info.baethge.lk1516.huffman.Knoten@2e005c4b"
+"info.baethge.lk1516.huffman.Knoten@694abbdc" -> "info.baethge.lk1516.huffman.Knoten@4567f35d"
+"info.baethge.lk1516.huffman.Knoten@5af3afd9" -> "info.baethge.lk1516.huffman.Blatt@44ebcd03"
+"info.baethge.lk1516.huffman.Knoten@5af3afd9" -> "info.baethge.lk1516.huffman.Knoten@694abbdc"
+ "info.baethge.lk1516.huffman.Knoten@323b36e0" [label="241920"]
+ "info.baethge.lk1516.huffman.Knoten@515aebb0" [label="115360"]
+ "info.baethge.lk1516.huffman.Blatt@245b4bdc" [label="n - 57462" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@6c64cb25" [label="a - 57898" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@515aebb0" -> "info.baethge.lk1516.huffman.Blatt@245b4bdc"
+"info.baethge.lk1516.huffman.Knoten@515aebb0" -> "info.baethge.lk1516.huffman.Blatt@6c64cb25"
+ "info.baethge.lk1516.huffman.Knoten@dd8ba08" [label="126560"]
+ "info.baethge.lk1516.huffman.Knoten@6ae5aa72" [label="62016"]
+ "info.baethge.lk1516.huffman.Knoten@5c5eefef" [label="30232"]
+ "info.baethge.lk1516.huffman.Knoten@5158b42f" [label="14767"]
+ "info.baethge.lk1516.huffman.Blatt@72d1ad2e" [label=". - 7374" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@2d7275fc" [label="7393"]
+ "info.baethge.lk1516.huffman.Blatt@399f45b1" [label="ü - 3649" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@38c6f217" [label="P - 3744" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@2d7275fc" -> "info.baethge.lk1516.huffman.Blatt@399f45b1"
+"info.baethge.lk1516.huffman.Knoten@2d7275fc" -> "info.baethge.lk1516.huffman.Blatt@38c6f217"
+"info.baethge.lk1516.huffman.Knoten@5158b42f" -> "info.baethge.lk1516.huffman.Blatt@72d1ad2e"
+"info.baethge.lk1516.huffman.Knoten@5158b42f" -> "info.baethge.lk1516.huffman.Knoten@2d7275fc"
+ "info.baethge.lk1516.huffman.Blatt@595b007d" [label="3 - 15465" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@5c5eefef" -> "info.baethge.lk1516.huffman.Knoten@5158b42f"
+"info.baethge.lk1516.huffman.Knoten@5c5eefef" -> "info.baethge.lk1516.huffman.Blatt@595b007d"
+ "info.baethge.lk1516.huffman.Knoten@16293aa2" [label="31784"]
+ "info.baethge.lk1516.huffman.Blatt@478190fc" [label="9 - 15874" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@79e2c065" [label="m - 15910" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@16293aa2" -> "info.baethge.lk1516.huffman.Blatt@478190fc"
+"info.baethge.lk1516.huffman.Knoten@16293aa2" -> "info.baethge.lk1516.huffman.Blatt@79e2c065"
+"info.baethge.lk1516.huffman.Knoten@6ae5aa72" -> "info.baethge.lk1516.huffman.Knoten@5c5eefef"
+"info.baethge.lk1516.huffman.Knoten@6ae5aa72" -> "info.baethge.lk1516.huffman.Knoten@16293aa2"
+ "info.baethge.lk1516.huffman.Knoten@222545dc" [label="64544"]
+ "info.baethge.lk1516.huffman.Knoten@3a93b025" [label="32020"]
+ "info.baethge.lk1516.huffman.Blatt@7e07db1f" [label="4 - 16000" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@1189dd52" [label="2 - 16020" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@3a93b025" -> "info.baethge.lk1516.huffman.Blatt@7e07db1f"
+"info.baethge.lk1516.huffman.Knoten@3a93b025" -> "info.baethge.lk1516.huffman.Blatt@1189dd52"
+ "info.baethge.lk1516.huffman.Knoten@35cabb2a" [label="32524"]
+ "info.baethge.lk1516.huffman.Knoten@36bc55de" [label="16207"]
+ "info.baethge.lk1516.huffman.Blatt@16d04d3d" [label="M - 8092" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@49ec71f8" [label="8115"]
+ "info.baethge.lk1516.huffman.Blatt@1d2adfbe" [label="D - 4042" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@36902638" [label="F - 4073" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@49ec71f8" -> "info.baethge.lk1516.huffman.Blatt@1d2adfbe"
+"info.baethge.lk1516.huffman.Knoten@49ec71f8" -> "info.baethge.lk1516.huffman.Blatt@36902638"
+"info.baethge.lk1516.huffman.Knoten@36bc55de" -> "info.baethge.lk1516.huffman.Blatt@16d04d3d"
+"info.baethge.lk1516.huffman.Knoten@36bc55de" -> "info.baethge.lk1516.huffman.Knoten@49ec71f8"
+ "info.baethge.lk1516.huffman.Blatt@564fabc8" [label="7 - 16317" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@35cabb2a" -> "info.baethge.lk1516.huffman.Knoten@36bc55de"
+"info.baethge.lk1516.huffman.Knoten@35cabb2a" -> "info.baethge.lk1516.huffman.Blatt@564fabc8"
+"info.baethge.lk1516.huffman.Knoten@222545dc" -> "info.baethge.lk1516.huffman.Knoten@3a93b025"
+"info.baethge.lk1516.huffman.Knoten@222545dc" -> "info.baethge.lk1516.huffman.Knoten@35cabb2a"
+"info.baethge.lk1516.huffman.Knoten@dd8ba08" -> "info.baethge.lk1516.huffman.Knoten@6ae5aa72"
+"info.baethge.lk1516.huffman.Knoten@dd8ba08" -> "info.baethge.lk1516.huffman.Knoten@222545dc"
+"info.baethge.lk1516.huffman.Knoten@323b36e0" -> "info.baethge.lk1516.huffman.Knoten@515aebb0"
+"info.baethge.lk1516.huffman.Knoten@323b36e0" -> "info.baethge.lk1516.huffman.Knoten@dd8ba08"
+"info.baethge.lk1516.huffman.Knoten@3bb9a3ff" -> "info.baethge.lk1516.huffman.Knoten@5af3afd9"
+"info.baethge.lk1516.huffman.Knoten@3bb9a3ff" -> "info.baethge.lk1516.huffman.Knoten@323b36e0"
+ "info.baethge.lk1516.huffman.Knoten@661972b0" [label="628701"]
+ "info.baethge.lk1516.huffman.Knoten@223d2c72" [label="283764"]
+ "info.baethge.lk1516.huffman.Knoten@436813f3" [label="136404"]
+ "info.baethge.lk1516.huffman.Knoten@3febb011" [label="66951"]
+ "info.baethge.lk1516.huffman.Knoten@131774fe" [label="33251"]
+ "info.baethge.lk1516.huffman.Blatt@77847718" [label="6 - 16365" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@7f3b84b8" [label="16886"]
+ "info.baethge.lk1516.huffman.Blatt@57a3af25" [label="B - 8128" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@2b662a77" [label="f - 8758" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@7f3b84b8" -> "info.baethge.lk1516.huffman.Blatt@57a3af25"
+"info.baethge.lk1516.huffman.Knoten@7f3b84b8" -> "info.baethge.lk1516.huffman.Blatt@2b662a77"
+"info.baethge.lk1516.huffman.Knoten@131774fe" -> "info.baethge.lk1516.huffman.Blatt@77847718"
+"info.baethge.lk1516.huffman.Knoten@131774fe" -> "info.baethge.lk1516.huffman.Knoten@7f3b84b8"
+ "info.baethge.lk1516.huffman.Blatt@158d2680" [label="  - 33700" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@3febb011" -> "info.baethge.lk1516.huffman.Knoten@131774fe"
+"info.baethge.lk1516.huffman.Knoten@3febb011" -> "info.baethge.lk1516.huffman.Blatt@158d2680"
+ "info.baethge.lk1516.huffman.Knoten@10e31a9a" [label="69453"]
+ "info.baethge.lk1516.huffman.Blatt@7f0eb4b4" [label="l - 34010" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@5c33f1a9" [label="35443"]
+ "info.baethge.lk1516.huffman.Blatt@1623b78d" [label="c - 17391" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@c8c12ac" [label="d - 18052" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@5c33f1a9" -> "info.baethge.lk1516.huffman.Blatt@1623b78d"
+"info.baethge.lk1516.huffman.Knoten@5c33f1a9" -> "info.baethge.lk1516.huffman.Blatt@c8c12ac"
+"info.baethge.lk1516.huffman.Knoten@10e31a9a" -> "info.baethge.lk1516.huffman.Blatt@7f0eb4b4"
+"info.baethge.lk1516.huffman.Knoten@10e31a9a" -> "info.baethge.lk1516.huffman.Knoten@5c33f1a9"
+"info.baethge.lk1516.huffman.Knoten@436813f3" -> "info.baethge.lk1516.huffman.Knoten@3febb011"
+"info.baethge.lk1516.huffman.Knoten@436813f3" -> "info.baethge.lk1516.huffman.Knoten@10e31a9a"
+ "info.baethge.lk1516.huffman.Knoten@74fe5c40" [label="147360"]
+ "info.baethge.lk1516.huffman.Blatt@6adbc9d" [label="r - 73083" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@4550bb58" [label="74277"]
+ "info.baethge.lk1516.huffman.Knoten@4ec4f3a0" [label="36219"]
+ "info.baethge.lk1516.huffman.Knoten@49139829" [label="18081"]
+ "info.baethge.lk1516.huffman.Knoten@6069db50" [label="8784"]
+ "info.baethge.lk1516.huffman.Knoten@1b7cc17c" [label="4283"]
+ "info.baethge.lk1516.huffman.Blatt@77fbd92c" [label="ß - 1946" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@67c27493" [label="C - 2337" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@1b7cc17c" -> "info.baethge.lk1516.huffman.Blatt@77fbd92c"
+"info.baethge.lk1516.huffman.Knoten@1b7cc17c" -> "info.baethge.lk1516.huffman.Blatt@67c27493"
+ "info.baethge.lk1516.huffman.Blatt@59662a0b" [label="G - 4501" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@6069db50" -> "info.baethge.lk1516.huffman.Knoten@1b7cc17c"
+"info.baethge.lk1516.huffman.Knoten@6069db50" -> "info.baethge.lk1516.huffman.Blatt@59662a0b"
+ "info.baethge.lk1516.huffman.Blatt@4efbca5a" [label="  - 9297" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@49139829" -> "info.baethge.lk1516.huffman.Knoten@6069db50"
+"info.baethge.lk1516.huffman.Knoten@49139829" -> "info.baethge.lk1516.huffman.Blatt@4efbca5a"
+ "info.baethge.lk1516.huffman.Blatt@9597028" [label="5 - 18138" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@4ec4f3a0" -> "info.baethge.lk1516.huffman.Knoten@49139829"
+"info.baethge.lk1516.huffman.Knoten@4ec4f3a0" -> "info.baethge.lk1516.huffman.Blatt@9597028"
+ "info.baethge.lk1516.huffman.Knoten@223191a6" [label="38058"]
+ "info.baethge.lk1516.huffman.Blatt@1a482e36" [label="g - 18323" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@72967906" [label="u - 19735" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@223191a6" -> "info.baethge.lk1516.huffman.Blatt@1a482e36"
+"info.baethge.lk1516.huffman.Knoten@223191a6" -> "info.baethge.lk1516.huffman.Blatt@72967906"
+"info.baethge.lk1516.huffman.Knoten@4550bb58" -> "info.baethge.lk1516.huffman.Knoten@4ec4f3a0"
+"info.baethge.lk1516.huffman.Knoten@4550bb58" -> "info.baethge.lk1516.huffman.Knoten@223191a6"
+"info.baethge.lk1516.huffman.Knoten@74fe5c40" -> "info.baethge.lk1516.huffman.Blatt@6adbc9d"
+"info.baethge.lk1516.huffman.Knoten@74fe5c40" -> "info.baethge.lk1516.huffman.Knoten@4550bb58"
+"info.baethge.lk1516.huffman.Knoten@223d2c72" -> "info.baethge.lk1516.huffman.Knoten@436813f3"
+"info.baethge.lk1516.huffman.Knoten@223d2c72" -> "info.baethge.lk1516.huffman.Knoten@74fe5c40"
+ "info.baethge.lk1516.huffman.Knoten@8f4ea7c" [label="344937"]
+ "info.baethge.lk1516.huffman.Knoten@5b8dfcc1" [label="165948"]
+ "info.baethge.lk1516.huffman.Knoten@747ddf94" [label="80263"]
+ "info.baethge.lk1516.huffman.Knoten@1bd4fdd" [label="39679"]
+ "info.baethge.lk1516.huffman.Knoten@4f83df68" [label="19820"]
+ "info.baethge.lk1516.huffman.Knoten@7d8995e" [label="9698"]
+ "info.baethge.lk1516.huffman.Blatt@42a48628" [label="R - 4803" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@293a5bf6" [label="4895"]
+ "info.baethge.lk1516.huffman.Blatt@6aeb35e6" [label="T - 2428" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@1283bb96" [label="2467"]
+ "info.baethge.lk1516.huffman.Blatt@74f0ea28" [label="I - 1205" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@f6efaab" [label="1262"]
+ "info.baethge.lk1516.huffman.Knoten@3c19aaa5" [label="546"]
+ "info.baethge.lk1516.huffman.Knoten@409bf450" [label="208"]
+ "info.baethge.lk1516.huffman.Knoten@49e53c76" [label="97"]
+ "info.baethge.lk1516.huffman.Blatt@2a3b5b47" [label="Ä - 46" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@55b699ef" [label="51"]
+ "info.baethge.lk1516.huffman.Knoten@35d019a3" [label="22"]
+ "info.baethge.lk1516.huffman.Blatt@18078bef" [label="X - 11" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@799f10e1" [label="11"]
+ "info.baethge.lk1516.huffman.Blatt@4c371370" [label="/ - 3" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@145f66e3" [label="' - 8" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@799f10e1" -> "info.baethge.lk1516.huffman.Blatt@4c371370"
+"info.baethge.lk1516.huffman.Knoten@799f10e1" -> "info.baethge.lk1516.huffman.Blatt@145f66e3"
+"info.baethge.lk1516.huffman.Knoten@35d019a3" -> "info.baethge.lk1516.huffman.Blatt@18078bef"
+"info.baethge.lk1516.huffman.Knoten@35d019a3" -> "info.baethge.lk1516.huffman.Knoten@799f10e1"
+ "info.baethge.lk1516.huffman.Blatt@689604d9" [label="Ü - 29" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@55b699ef" -> "info.baethge.lk1516.huffman.Knoten@35d019a3"
+"info.baethge.lk1516.huffman.Knoten@55b699ef" -> "info.baethge.lk1516.huffman.Blatt@689604d9"
+"info.baethge.lk1516.huffman.Knoten@49e53c76" -> "info.baethge.lk1516.huffman.Blatt@2a3b5b47"
+"info.baethge.lk1516.huffman.Knoten@49e53c76" -> "info.baethge.lk1516.huffman.Knoten@55b699ef"
+ "info.baethge.lk1516.huffman.Knoten@351d00c0" [label="111"]
+ "info.baethge.lk1516.huffman.Blatt@3023df74" [label="Ö - 55" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@313ac989" [label="q - 56" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@351d00c0" -> "info.baethge.lk1516.huffman.Blatt@3023df74"
+"info.baethge.lk1516.huffman.Knoten@351d00c0" -> "info.baethge.lk1516.huffman.Blatt@313ac989"
+"info.baethge.lk1516.huffman.Knoten@409bf450" -> "info.baethge.lk1516.huffman.Knoten@49e53c76"
+"info.baethge.lk1516.huffman.Knoten@409bf450" -> "info.baethge.lk1516.huffman.Knoten@351d00c0"
+ "info.baethge.lk1516.huffman.Knoten@38d8f54a" [label="338"]
+ "info.baethge.lk1516.huffman.Blatt@4562e04d" [label="Y - 162" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@2a65fe7c" [label="176"]
+ "info.baethge.lk1516.huffman.Blatt@4135c3b" [label="Q - 82" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@6302bbb1" [label="é - 94" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@2a65fe7c" -> "info.baethge.lk1516.huffman.Blatt@4135c3b"
+"info.baethge.lk1516.huffman.Knoten@2a65fe7c" -> "info.baethge.lk1516.huffman.Blatt@6302bbb1"
+"info.baethge.lk1516.huffman.Knoten@38d8f54a" -> "info.baethge.lk1516.huffman.Blatt@4562e04d"
+"info.baethge.lk1516.huffman.Knoten@38d8f54a" -> "info.baethge.lk1516.huffman.Knoten@2a65fe7c"
+"info.baethge.lk1516.huffman.Knoten@3c19aaa5" -> "info.baethge.lk1516.huffman.Knoten@409bf450"
+"info.baethge.lk1516.huffman.Knoten@3c19aaa5" -> "info.baethge.lk1516.huffman.Knoten@38d8f54a"
+ "info.baethge.lk1516.huffman.Blatt@3349e9bb" [label="j - 716" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@f6efaab" -> "info.baethge.lk1516.huffman.Knoten@3c19aaa5"
+"info.baethge.lk1516.huffman.Knoten@f6efaab" -> "info.baethge.lk1516.huffman.Blatt@3349e9bb"
+"info.baethge.lk1516.huffman.Knoten@1283bb96" -> "info.baethge.lk1516.huffman.Blatt@74f0ea28"
+"info.baethge.lk1516.huffman.Knoten@1283bb96" -> "info.baethge.lk1516.huffman.Knoten@f6efaab"
+"info.baethge.lk1516.huffman.Knoten@293a5bf6" -> "info.baethge.lk1516.huffman.Blatt@6aeb35e6"
+"info.baethge.lk1516.huffman.Knoten@293a5bf6" -> "info.baethge.lk1516.huffman.Knoten@1283bb96"
+"info.baethge.lk1516.huffman.Knoten@7d8995e" -> "info.baethge.lk1516.huffman.Blatt@42a48628"
+"info.baethge.lk1516.huffman.Knoten@7d8995e" -> "info.baethge.lk1516.huffman.Knoten@293a5bf6"
+ "info.baethge.lk1516.huffman.Blatt@130d63be" [label="k - 10122" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@4f83df68" -> "info.baethge.lk1516.huffman.Knoten@7d8995e"
+"info.baethge.lk1516.huffman.Knoten@4f83df68" -> "info.baethge.lk1516.huffman.Blatt@130d63be"
+ "info.baethge.lk1516.huffman.Blatt@6cf0e0ba" [label="1 - 19859" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@1bd4fdd" -> "info.baethge.lk1516.huffman.Knoten@4f83df68"
+"info.baethge.lk1516.huffman.Knoten@1bd4fdd" -> "info.baethge.lk1516.huffman.Blatt@6cf0e0ba"
+ "info.baethge.lk1516.huffman.Blatt@55183b20" [label="i - 40584" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@747ddf94" -> "info.baethge.lk1516.huffman.Knoten@1bd4fdd"
+"info.baethge.lk1516.huffman.Knoten@747ddf94" -> "info.baethge.lk1516.huffman.Blatt@55183b20"
+ "info.baethge.lk1516.huffman.Knoten@35e2d654" [label="85685"]
+ "info.baethge.lk1516.huffman.Knoten@31304f14" [label="42211"]
+ "info.baethge.lk1516.huffman.Knoten@2a4fb17b" [label="20525"]
+ "info.baethge.lk1516.huffman.Blatt@6f1de4c7" [label="0 - 10123" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@459e9125" [label="10402"]
+ "info.baethge.lk1516.huffman.Blatt@128d2484" [label="W - 5057" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@7cc0cdad" [label="L - 5345" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@459e9125" -> "info.baethge.lk1516.huffman.Blatt@128d2484"
+"info.baethge.lk1516.huffman.Knoten@459e9125" -> "info.baethge.lk1516.huffman.Blatt@7cc0cdad"
+"info.baethge.lk1516.huffman.Knoten@2a4fb17b" -> "info.baethge.lk1516.huffman.Blatt@6f1de4c7"
+"info.baethge.lk1516.huffman.Knoten@2a4fb17b" -> "info.baethge.lk1516.huffman.Knoten@459e9125"
+ "info.baethge.lk1516.huffman.Blatt@5c6648b0" [label="o - 21686" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@31304f14" -> "info.baethge.lk1516.huffman.Knoten@2a4fb17b"
+"info.baethge.lk1516.huffman.Knoten@31304f14" -> "info.baethge.lk1516.huffman.Blatt@5c6648b0"
+ "info.baethge.lk1516.huffman.Blatt@34a3d150" [label="t - 43474" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@35e2d654" -> "info.baethge.lk1516.huffman.Knoten@31304f14"
+"info.baethge.lk1516.huffman.Knoten@35e2d654" -> "info.baethge.lk1516.huffman.Blatt@34a3d150"
+"info.baethge.lk1516.huffman.Knoten@5b8dfcc1" -> "info.baethge.lk1516.huffman.Knoten@747ddf94"
+"info.baethge.lk1516.huffman.Knoten@5b8dfcc1" -> "info.baethge.lk1516.huffman.Knoten@35e2d654"
+ "info.baethge.lk1516.huffman.Knoten@2f9f7dcf" [label="178989"]
+ "info.baethge.lk1516.huffman.Blatt@7c7b252e" [label=", - 88000" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@4d5d943d" [label="90989"]
+ "info.baethge.lk1516.huffman.Knoten@368f2016" [label="44630"]
+ "info.baethge.lk1516.huffman.Blatt@692f203f" [label="
+ - 22000" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Knoten@48f2bd5b" [label="22630"]
+ "info.baethge.lk1516.huffman.Knoten@7b2bbc3" [label="11194"]
+ "info.baethge.lk1516.huffman.Blatt@1aafa419" [label="p - 5596" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@47eaca72" [label="z - 5598" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@7b2bbc3" -> "info.baethge.lk1516.huffman.Blatt@1aafa419"
+"info.baethge.lk1516.huffman.Knoten@7b2bbc3" -> "info.baethge.lk1516.huffman.Blatt@47eaca72"
+ "info.baethge.lk1516.huffman.Knoten@a1153bc" [label="11436"]
+ "info.baethge.lk1516.huffman.Knoten@55141def" [label="5606"]
+ "info.baethge.lk1516.huffman.Blatt@3270d194" [label="ö - 2648" shape=ellipse,style=filled,color=".4 1.0 .7"]
+ "info.baethge.lk1516.huffman.Blatt@235834f2" [label="J - 2958" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@55141def" -> "info.baethge.lk1516.huffman.Blatt@3270d194"
+"info.baethge.lk1516.huffman.Knoten@55141def" -> "info.baethge.lk1516.huffman.Blatt@235834f2"
+ "info.baethge.lk1516.huffman.Blatt@55182842" [label="w - 5830" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@a1153bc" -> "info.baethge.lk1516.huffman.Knoten@55141def"
+"info.baethge.lk1516.huffman.Knoten@a1153bc" -> "info.baethge.lk1516.huffman.Blatt@55182842"
+"info.baethge.lk1516.huffman.Knoten@48f2bd5b" -> "info.baethge.lk1516.huffman.Knoten@7b2bbc3"
+"info.baethge.lk1516.huffman.Knoten@48f2bd5b" -> "info.baethge.lk1516.huffman.Knoten@a1153bc"
+"info.baethge.lk1516.huffman.Knoten@368f2016" -> "info.baethge.lk1516.huffman.Blatt@692f203f"
+"info.baethge.lk1516.huffman.Knoten@368f2016" -> "info.baethge.lk1516.huffman.Knoten@48f2bd5b"
+ "info.baethge.lk1516.huffman.Blatt@4c583ecf" [label="s - 46359" shape=ellipse,style=filled,color=".4 1.0 .7"]
+"info.baethge.lk1516.huffman.Knoten@4d5d943d" -> "info.baethge.lk1516.huffman.Knoten@368f2016"
+"info.baethge.lk1516.huffman.Knoten@4d5d943d" -> "info.baethge.lk1516.huffman.Blatt@4c583ecf"
+"info.baethge.lk1516.huffman.Knoten@2f9f7dcf" -> "info.baethge.lk1516.huffman.Blatt@7c7b252e"
+"info.baethge.lk1516.huffman.Knoten@2f9f7dcf" -> "info.baethge.lk1516.huffman.Knoten@4d5d943d"
+"info.baethge.lk1516.huffman.Knoten@8f4ea7c" -> "info.baethge.lk1516.huffman.Knoten@5b8dfcc1"
+"info.baethge.lk1516.huffman.Knoten@8f4ea7c" -> "info.baethge.lk1516.huffman.Knoten@2f9f7dcf"
+"info.baethge.lk1516.huffman.Knoten@661972b0" -> "info.baethge.lk1516.huffman.Knoten@223d2c72"
+"info.baethge.lk1516.huffman.Knoten@661972b0" -> "info.baethge.lk1516.huffman.Knoten@8f4ea7c"
+"info.baethge.lk1516.huffman.Knoten@7c729a55" -> "info.baethge.lk1516.huffman.Knoten@3bb9a3ff"
+"info.baethge.lk1516.huffman.Knoten@7c729a55" -> "info.baethge.lk1516.huffman.Knoten@661972b0"
+}
