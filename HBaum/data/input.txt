@@ -1,0 +1,3 @@
+﻿Bäume sind auch in der Informatik ein wichtiges Thema.
+Viele Daten werden zunächst in Bäumen abgespeichert.
+Sie werden vor allem zur Suche und Sortierung verwendet.
